@@ -1,0 +1,242 @@
+/* GENERAL */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --blue: #1e90ff;
+  --lightblue: #006acb;
+  --darkblue: #0052c4;
+  --veryDarkBlue: #000099;
+  --white: #fff;
+  --gray: #333;
+  --lightGray: #888;
+  --brown: #bd8471;
+  --brownRgba: rgba(189, 132, 113, 0.9);
+  --darkBrown: #965b48;
+  --red: #d82c2e;
+  --redRgba: rgba(216, 44, 46, 0.7);
+  --primaryColor: var(--darkblue);
+  --secondaryColor: var(--white);
+  scrollbar-color: var(--brown) var(--veryDarkBlue);
+}
+::-webkit-scrollbar {
+  width: 17px;
+}
+::-webkit-scrollbar-track {
+  background: var(--white);
+  border-radius: 5%;
+  border: 1px solid #aeaeb5;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brown);
+  border-radius: 5%;
+  border: 1px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--darkBrown);
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--darkBrown);
+}
+@font-face {
+  font-family: lato;
+  src: local("Lato"), url(/assets/fonts/Lato/Lato-Regular.ttf);
+}
+body {
+  font-family: lato, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+img {
+  max-width: 35%;
+  height: auto;
+}
+section {
+  padding: 10px 0 80px;
+}
+section .heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+section .heading {
+  text-transform: uppercase;
+}
+.divider {
+  width: 100px;
+  height: 2px;
+  background-color: var(--primaryColor);
+  margin: 0 auto 20px;
+}
+.dotted {
+  border-bottom: 2px dotted aqua;
+}
+.red-dotted {
+  border-bottom: 2px dotted var(--red);
+}
+.underline {
+  border-bottom: 2px solid lime;
+}
+.center {
+  text-align: center;
+}
+.emphasis {
+  color: lime;
+}
+
+/*** PARTICULIER ***/
+/* NAVBAR */
+.navbar {
+  background-color: var(--primaryColor);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 1px solid var(--secondaryColor);
+}
+.navbar-nav {
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-link {
+  color: var(--secondaryColor);
+  margin: 0 6px;
+}
+.nav-link.active,
+.nav-link:hover {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor) !important;
+}
+.social-media a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.social-media a:visited {
+  color: #fff;
+}
+
+
+
+/* PORTFOLIO */
+#portfolio {
+  background-image: linear-gradient(
+    to bottom,
+    var(--darkblue),
+    var(--lightblue)
+  );
+  background-color: var(--primaryColor);
+  min-height: 100vh;
+}
+#portfolio .divider {
+  background-color: var(--secondaryColor);
+}
+#portfolio .heading h2 {
+  color: var(--secondaryColor);
+}
+#portfolio .thumbnail {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+#portfolio .thumbnail:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+input[type="search"] {
+  font-size: 20px;
+}
+input[type="search"]:focus {
+  border-color: #ff0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(255, 255, 0, 0.7);
+  font-size: 20px;
+}
+.form-message {
+  display: none;
+  margin: 0;
+  color: var(--white);
+  font-size: 18px;
+}
+.card {
+  -webkit-transition: width 0.7s, height 0.7s, box-shadow 0.7s, transform 0.7s;
+  -o-transition: width 0.7s, height 0.7s, box-shadow 0.7s, transform 0.7s;
+  transition: width 0.7s, height 0.7s, box-shadow 0.7s, transform 0.7s;
+}
+.card:hover {
+  color: var(--darkblue);
+  font-weight: 600;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8), 0 6px 30px rgba(0, 0, 0, 0.8);
+  transform: scale(1.078, 1.078);
+}
+.tags {
+  display: none;
+}
+
+/* RECOMMENDATIONS */
+
+/* FOOTER */
+footer {
+  background-color: var(--veryDarkBlue);
+  padding: 20px;
+}
+.copyright {
+  margin-top: 10px;
+  color: #fff;
+}
+.bi-chevron-up:hover {
+  transform: scale(1.4, 1.4);
+}
+.copyright-text-link {
+  display: inline-block;
+  font-weight: 400;
+}
+.copyright a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.copyright a:visited {
+  color: #fff;
+}
+.copyright-text-link:hover {
+  transform: scale(1.1, 1.1);
+}
+.fab {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.fab:hover {
+  transform: scale(1.4, 1.4);
+}
+
+
+
+/*** MEDIA QUERIES ***/
+@media screen and (min-width: 701px) {
+  footer .copyright-text-link .break {
+    display: none;
+  }
+}
+@media screen and (max-width: 625px) {  
+  /* PORTFOLIO */
+  .card:hover {
+    transform: scale(1, 1);
+  }
+}
+@media screen and (max-width: 370px) {
+  .copyright-text-link,
+  .copyright-text {
+    font-size: 16px;
+  }
+}
