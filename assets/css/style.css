@@ -221,8 +221,62 @@ footer {
 }
 
 
+/* MISSIONS */
+#missions {
+  background-image: linear-gradient(var(--darkblue), var(--lightblue));
+  background-color: var(--primaryColor);
+  min-height: 100vh;
+  color: var(--white);
+  font-size: 20px;
+  padding-top: 0;
+}
+#missions > h1 {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+#missions > .container > p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  /* text-align: justify; */
+}
+#missions section {
+  padding: 15px 0;
+}
+#missions section p {
+  padding-bottom: 10px;
+  margin: 0;
+}
+#missions a:link,
+#missions a:visited {
+  color: var(--white);
+  text-decoration: none;
+}
+#missions a:hover {
+  color: aqua;
+}
+
+
 
 /*** MEDIA QUERIES ***/
+@media screen and (min-width: 992px) {
+  /* MISSIONS */
+  #missions > .container > p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: justify;
+  }
+  #missions section {
+    padding: 15px 0;
+  }
+  #missions section p {
+    text-align: justify;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+}
 @media screen and (min-width: 701px) {
   footer .copyright-text-link .break {
     display: none;
