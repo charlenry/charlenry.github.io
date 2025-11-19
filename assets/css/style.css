@@ -285,7 +285,7 @@ footer {
   text-align: center;
 }
 .table-container {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 20px;
   border: 1px solid var(--white);
@@ -339,7 +339,7 @@ footer {
   justify-content: center;
 }
 #certificates .notice p{
-  width: 70%;
+  width: 60%;
   text-align: start;
 }
 
