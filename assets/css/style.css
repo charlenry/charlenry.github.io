@@ -285,7 +285,7 @@ footer {
   text-align: center;
 }
 .table-container {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 20px;
   border: 1px solid var(--white);
@@ -339,7 +339,7 @@ footer {
   justify-content: center;
 }
 #certificates .notice p{
-  width: 50%;
+  width: 70%;
   text-align: start;
 }
 
@@ -375,6 +375,9 @@ footer {
 }
 @media screen and (max-width: 700px) {
    /* CERTIFICATES */
+  .table-container {
+    width: 90%;
+  }
   td {
     font-size: 15px;
   }
@@ -388,6 +391,9 @@ footer {
   .text {
     margin-right: 0;
     margin-bottom: 15px;
+  }
+  #certificates .notice p{
+    width: 90%;
   }
 }
 @media screen and (max-width: 625px) {
