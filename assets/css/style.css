@@ -289,6 +289,7 @@ footer {
   margin: 0 auto;
   margin-top: 20px;
   border: 1px solid var(--white);
+  overflow-x: auto;
 }
 ._row {
   display: flex;
@@ -307,6 +308,8 @@ footer {
 }
 .doc_name {
   margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .sha1 {
   margin-bottom: 10px;
@@ -330,6 +333,16 @@ footer {
   background-color: var(--secondaryColor);
   color: var(--primaryColor);
 }
+#certificates .notice{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#certificates .notice p{
+  width: 50%;
+  text-align: start;
+}
+
 
 
 /*** MEDIA QUERIES ***/
