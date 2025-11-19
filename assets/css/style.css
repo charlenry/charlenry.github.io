@@ -216,6 +216,14 @@ footer {
 .copyright-text-link:hover {
   transform: scale(1.1, 1.1);
 }
+.fas {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.fas:hover {
+  transform: scale(1.4, 1.4);
+}
 .fab {
   font-size: 24px;
   margin-top: 5px;
@@ -261,6 +269,69 @@ footer {
   color: aqua;
 }
 
+/* CERTFIFICATES */
+#certificates {
+  background-image: linear-gradient(var(--darkblue), var(--lightblue));
+  background-color: var(--primaryColor);
+  min-height: 100vh;
+  color: var(--white);
+  font-size: 20px;
+}
+#certificates h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+#certificates p {
+  text-align: center;
+}
+.table-container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid var(--white);
+}
+._row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid var(--white);
+}
+.text {
+  max-width: 100%;
+  margin-right: 20px;
+}
+.doc_name {
+  margin-bottom: 10px;
+}
+.sha1 {
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+.button2 {
+  color: var(--secondaryColor);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid var(--secondaryColor);
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 15px;
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  transition: all 0.4s ease-in 0s;
+}
+.button2:hover {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+
+
 /*** MEDIA QUERIES ***/
 @media screen and (min-width: 992px) {
   /* MISSIONS */
@@ -278,10 +349,32 @@ footer {
     padding-bottom: 10px;
     margin: 0;
   }
+
+  /* CERTIFICATES */
+  .button2 {
+    padding: 10px 20px;
+  }
 }
 @media screen and (min-width: 701px) {
   footer .copyright-text-link .break {
     display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+   /* CERTIFICATES */
+  td {
+    font-size: 15px;
+  }
+  .button2 {
+    font-size: 15px;
+  }
+  ._row {
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 625px) {
@@ -290,9 +383,22 @@ footer {
     transform: scale(1, 1);
   }
 }
+@media screen and (max-width: 420px) {
+  /* CERTIFICATES */
+  #certificates h1 {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 370px) {
   .copyright-text-link,
   .copyright-text {
     font-size: 16px;
+  }
+
+  /* CERTIFICATES */
+  .button2 {
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 11px;
   }
 }
