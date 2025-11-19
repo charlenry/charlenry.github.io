@@ -124,8 +124,6 @@ section .heading {
   color: #fff;
 }
 
-
-
 /* PORTFOLIO */
 #portfolio {
   background-image: linear-gradient(
@@ -138,6 +136,13 @@ section .heading {
 }
 #portfolio .divider {
   background-color: var(--secondaryColor);
+}
+#portfolio .social-media {
+  display:flex;
+  justify-content: flex-end;
+}
+#portfolio .social-media .github-logo {
+  margin-right: 20px;
 }
 #portfolio .heading h2 {
   color: var(--secondaryColor);
@@ -220,7 +225,6 @@ footer {
   transform: scale(1.4, 1.4);
 }
 
-
 /* MISSIONS */
 #missions {
   background-image: linear-gradient(var(--darkblue), var(--lightblue));
@@ -257,8 +261,6 @@ footer {
   color: aqua;
 }
 
-
-
 /*** MEDIA QUERIES ***/
 @media screen and (min-width: 992px) {
   /* MISSIONS */
@@ -282,7 +284,7 @@ footer {
     display: none;
   }
 }
-@media screen and (max-width: 625px) {  
+@media screen and (max-width: 625px) {
   /* PORTFOLIO */
   .card:hover {
     transform: scale(1, 1);
