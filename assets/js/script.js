@@ -1,8 +1,8 @@
 "use strict";
 /*** onLoad ***/
-window.onload = function () {
-  location.hash = "#portfolio";
-};
+// window.onload = function () {
+//   location.hash = "#portfolio";
+// };
 
 /*** Projects search function ***/
 $(document).ready(function () {
