@@ -313,10 +313,15 @@ footer {
   margin-bottom: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
+}
+.alignment {
+  text-align: initial;
 }
 .sha1 {
   margin-bottom: 10px;
   word-wrap: break-word;
+  text-align: center;
 }
 .button2 {
   color: var(--secondaryColor);
